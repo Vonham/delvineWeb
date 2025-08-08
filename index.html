@@ -3,158 +3,102 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Delvine Inc.</title>
+    <title>Delvine Inc. | Innovative Digital Therapeutics</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+    <div id="gradient-background"></div>
+
     <header>
-        <div class="logo">
-            <a href="#">Delvine</a>
+        <div class="container">
+            <div class="logo">
+                <a href="#">Delvine</a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#hero">About</a></li>
+                    <li><a href="#platform">Platform</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
         </div>
-        <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#platform">Platform & Science</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
     </header>
 
     <main>
-        <section id="about">
-            <div class="content-box">
-                <h1>Enjoy your treatment !</h1>
-                <img src="images/yoga.png" alt="Yoga pose" class="main-image">
-                <h2>No pain, Yes gain.<br>Being happy leads to greater health</h2>
+        <section id="hero" class="animated-section">
+            <div class="container">
+                <h1>Redefining Digital Therapeutics</h1>
+                <h2>Play your treatment, open a new tab of life.</h2>
+                <a href="#platform" class="cta-button">Explore Our Technology</a>
             </div>
+        </section>
 
-            <div class="content-box highlight-box">
-                <h3>Is your treatment HAPPY enough to achieve GOOD HEALTH?</h3>
-                <p>"A digital therapeutics that have the best of both clinical effect and pleasure. Positive experience is an important determinant of better health outcomes."</p>
-            </div>
-
-            <div class="content-box vision-section">
-                <h3>Our Mission & Vision</h3>
-                <h4>"Play your treatment, open a new tab of life"</h4>
-                <p>We deliver totally new type of treatment, providing positive experience in an exciting digital world, that induces change within individuals' mind and body.</p>
-                <!-- 아래 5개 비전 항목은 실제 이미지나 아이콘으로 대체하는 것을 권장합니다. -->
+        <section id="about" class="animated-section">
+             <div class="container">
+                <div class="section-title">
+                    <h2>Our Mission & Vision</h2>
+                </div>
                 <div class="vision-grid">
-                    <div class="vision-item"><strong>Game & Software</strong><p>Our playful contents promote healthy behaviors by increasing patient engagement.</p></div>
-                    <div class="vision-item"><strong>User-centered</strong><p>We design products that are easy to use, safe to use, and most of all, better to use to improve quality of treatment.</p></div>
-                    <div class="vision-item"><strong>Evidence-based</strong><p>With solid scientific evidence, we develop trusted digital therapeutics.</p></div>
-                    <div class="vision-item"><strong>Innovation</strong><p>Thinking outside the box, we suggest the gold standard of entertaining digital healthcare.</p></div>
-                    <div class="vision-item"><strong>Social responsibility</strong><p>Our responsibility is to boost everyone's well-being to build a healthier society.</p></div>
-                </div>
-            </div>
-
-            <div class="content-box">
-                <h3>Company History</h3>
-                <ul class="history-list">
-                    <li><strong>2017.03.15</strong> Founded</li>
-                    <li><strong>2018.05.01</strong> Participation in Al Bio-Robot Medical Convergence Project</li>
-                    <li><strong>2019.11.06</strong> best technology companies selected by the Korea Technology Finance Corporation</li>
-                    <li><strong>2020.08.12</strong> Seed Investment - Spring Camp</li>
-                    <li><strong>2020.10.01</strong> Participation in TIPS project (Tech Incubator Program for startup Korea)</li>
-                    <li><strong>2022.03.10</strong> Signing MOU between Delvine and Seoul St. Mary's Hospital</li>
-                    <li><strong>2022.09.08</strong> The top 10 finalists in Mental Health category of "Health Tech Callengers"</li>
-                </ul>
-            </div>
-            
-            <div class="content-box">
-                <h3>Partners</h3>
-                <div class="partners-grid">
-                    <img src="images/partner1_snuh.png" alt="SNUH Partner Logo">
-                    <img src="images/partner2_seoul_st_mary.png" alt="Seoul St. Mary's Hospital Logo">
-                    <img src="images/partner3_springcamp.png" alt="Spring Camp Logo">
-                    <img src="images/partner4_korea.png" alt="Korea University Logo">
+                    <div class="glass-card animated-item"><i class="fas fa-gamepad"></i><strong>Game & Software</strong><p>Playful contents promote healthy behaviors.</p></div>
+                    <div class="glass-card animated-item"><i class="fas fa-user-check"></i><strong>User-centered</strong><p>Easy to use, safe to use, better to use.</p></div>
+                    <div class="glass-card animated-item"><i class="fas fa-microscope"></i><strong>Evidence-based</strong><p>Trusted digital therapeutics with solid scientific evidence.</p></div>
+                    <div class="glass-card animated-item"><i class="fas fa-lightbulb"></i><strong>Innovation</strong><p>Entertaining digital healthcare that thinks outside the box.</p></div>
                 </div>
             </div>
         </section>
 
-        <section id="platform">
-            <div class="content-box">
-                <h2>Our Approach</h2>
-                <p>Built on the rigorous medical, engineering, neuroscientific knowledge, our digital rehabilitation programs are designed for those with physical and emotional disabilities. We focus on supporting patients to stay involved during their long journey of recovery, with our motivating digital therapy contents.</p>
-            </div>
-
-            <div class="content-box feature-box">
-                <img src="images/free-b.png" alt="FREE-B Illustration">
-                <div>
-                    <h3>FREE-B..</h3>
-                    <p>Functional Recovery Exercise Engine - Body</p>
-                    <ul>
-                        <li>FREE-B is designed to treat and manage physical inconveniences caused by neurological, musculoskeletal disorders.</li>
-                        <li>FREE-B brings home intensive physical exercises required for standard rehabilitation therapies.</li>
-                        <li>FREE-B is verified by many of the renowned SCI papers (10+).</li>
-                    </ul>
+        <section id="platform" class="animated-section">
+            <div class="container">
+                 <div class="section-title">
+                     <h2>Our Approach</h2>
+                 </div>
+                 <div class="feature-box animated-item">
+                    <img src="https://placehold.co/200x200/1E2D40/4A90E2?text=FREE-B" alt="FREE-B Illustration">
+                    <div>
+                        <h3>FREE-B <span class="subtitle">Functional Recovery Exercise Engine - Body</span></h3>
+                        <p>A digital solution designed to treat and manage physical inconveniences caused by neurological or musculoskeletal disorders, verified by renowned SCI papers.</p>
+                    </div>
                 </div>
-            </div>
-
-             <div class="content-box feature-box">
-                <img src="images/free-m.png" alt="FREE-M Illustration">
-                <div>
-                    <h3>FREE-M..</h3>
-                    <p>Functional Recovery Exercise Engine - Mind</p>
-                    <ul>
-                        <li>FREE-M is designed to treat and manage psychological symptoms caused by addiction or mood disorders.</li>
-                        <li>FREE-M corrects a distorted cognitive processes via brain exercise programs.</li>
-                        <li>FREE-M is verified by many of the renowned SCI papers.</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="content-box">
-                <h3>Pipeline</h3>
-                <p>We develop flexible pipelines based on two powerful platform and enable digital diagnosis through artificial intelligence.</p>
-                <img src="images/pipeline_chart.png" alt="Pipeline Chart" style="width:100%; max-width: 800px; margin-top: 20px;">
-            </div>
-
-            <div class="content-box">
-                <h3>Publication</h3>
-                 <p>Delvine's board members' extensive research history, both past and present, has been instrumental in driving the creation of robust, evidence-backed solutions.</p>
-                <div class="publication-grid">
-                    <div class="publication-item">Scientific reports</div>
-                    <div class="publication-item">Computers in Human Behavior</div>
-                    <div class="publication-item">Frontiers in Behavioral Neuroscience</div>
-                    <div class="publication-item">Advances in Health Sciences Education</div>
-                    <div class="publication-item">Frontiers in oncology</div>
-                    <div class="publication-item">Neuroimage</div>
-                    <div class="publication-item">JOVE</div>
-                    <div class="publication-item">Journal of clinical medicine</div>
-                    <div class="publication-item">Frontiers in Psychiatry</div>
+                 <div class="feature-box animated-item">
+                    <img src="https://placehold.co/200x200/1E2D40/4A90E2?text=FREE-M" alt="FREE-M Illustration">
+                    <div>
+                        <h3>FREE-M <span class="subtitle">Functional Recovery Exercise Engine - Mind</span></h3>
+                        <p>A therapeutic program to treat and manage psychological symptoms caused by addiction or mood disorders by correcting distorted cognitive processes.</p>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <section id="contact">
-            <div class="content-box">
-                <h2>Contact Us</h2>
-                <h3>Seeking Investors</h3>
-                <p>Join Delvine's journey, redefining the future of medical technology through innovative solutions in Al, big data, and mobile healthcare applications.</p>
-                <p>
-                    <strong>5F, 26, Hoam-ro 22 gil, Gwanak-gu, Seoul, Republic of Korea, 08801</strong><br>
-                    <strong>info@delvine.co.kr</strong>
-                </p>
-
-                <form action="#" method="POST" id="contact-form">
-                    <input type="text" name="name" placeholder="Name" required>
-                    <input type="email" name="email" placeholder="e-mail" required>
-                    <input type="text" name="title" placeholder="Title" required>
-                    <textarea name="message" placeholder="Please enter your affiliation and request" required></textarea>
-                    <button type="submit">Submit</button>
-                </form>
+        <section id="contact" class="animated-section">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Get In Touch</h2>
+                </div>
+                <h3>Seeking Investors & Partners</h3>
+                <p>Join Delvine's journey to redefine the future of medical technology.</p>
+                 <div class="contact-info">
+                    <div class="info-item"><i class="fas fa-map-marker-alt"></i> <span>5F, 26, Hoam-ro 22 gil, Gwanak-gu, Seoul, Republic of Korea</span></div>
+                    <a href="mailto:info@delvine.co.kr" class="cta-button">Email Us</a>
+                </div>
             </div>
         </section>
     </main>
 
     <footer>
-        <p>(주)델바인 | 대표자 : 조성민 | 사업자 번호 : 787-81-00687 | 이메일 : info@delvine.co.kr</p>
-        <p>서울특별시 관악구 호암로 22길 26. 5층 (주)델바인</p>
-        <p>Copyright 2023. Delvine Inc. All rights reserved.</p>
-        <div class="social-links">
-             <!-- 링크는 실제 주소로 채워주세요 -->
-            <a href="#" aria-label="LinkedIn">in</a>
+        <div class="container">
+            <p>(주)델바인 | 대표자: 조성민 | 사업자 번호: 787-81-00687</p>
+            <p>Copyright © 2023 Delvine Inc. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            </div>
         </div>
     </footer>
 
