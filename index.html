@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Delvine Inc. | Innovative Digital Therapeutics</title>
+    <title>Delvine | AI, Designing a Healthier Tomorrow</title>
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
@@ -15,63 +15,100 @@
 </head>
 <body>
 
-    <div id="gradient-background"></div>
-
     <header>
         <div class="container">
             <div class="logo">
-                <a href="#">Delvine</a>
+                <a href="#hero">Delvine</a>
             </div>
             <nav>
                 <ul>
-                    <li><a href="#hero">About</a></li>
-                    <li><a href="#platform">Platform</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#hero" data-key="nav_home">Home</a></li>
+                    <li><a href="#approach" data-key="nav_approach">Our Approach</a></li>
+                    <li><a href="#solutions" data-key="nav_solutions">Solutions</a></li>
+                    <li><a href="#contact" data-key="nav_contact">Contact</a></li>
                 </ul>
             </nav>
+            <div class="lang-switcher">
+                <a href="#" class="lang-btn active" data-lang="en">EN</a>
+                <span>|</span>
+                <a href="#" class="lang-btn" data-lang="ko">KO</a>
+            </div>
         </div>
     </header>
 
     <main>
         <section id="hero" class="animated-section">
+            <div class="video-background">
+                <video autoplay muted loop playsinline id="bg-video">
+                    <source src="back_mov.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="video-overlay"></div>
             <div class="container">
-                <h1>Redefining Digital Therapeutics</h1>
-                <h2>Play your treatment, open a new tab of life.</h2>
-                <a href="#platform" class="cta-button">Explore Our Technology</a>
+                <h1 data-key="hero_title">AI, Designing a Healthier Tomorrow for Humanity</h1>
+                <p class="subtitle" data-key="hero_subtitle">Delvine leverages its expertise in AI to tackle critical challenges across the healthcare spectrum—from <strong>neuro-rehabilitation and senior care to precision medicine and pharmaceutical automation.</strong> We research the most delicate technologies to solve problems in the deepest aspects of human life.</p>
+                <a href="#solutions" class="cta-button" data-key="hero_cta">Explore Our Solutions ↓</a>
             </div>
         </section>
 
-        <section id="about" class="animated-section">
+        <section id="approach" class="animated-section">
              <div class="container">
                 <div class="section-title">
-                    <h2>Our Mission & Vision</h2>
+                    <h2 data-key="approach_title">Our Approach: Awakening Vitality with Delicate Technology</h2>
                 </div>
-                <div class="vision-grid">
-                    <div class="glass-card animated-item"><i class="fas fa-gamepad"></i><strong>Game & Software</strong><p>Playful contents promote healthy behaviors.</p></div>
-                    <div class="glass-card animated-item"><i class="fas fa-user-check"></i><strong>User-centered</strong><p>Easy to use, safe to use, better to use.</p></div>
-                    <div class="glass-card animated-item"><i class="fas fa-microscope"></i><strong>Evidence-based</strong><p>Trusted digital therapeutics with solid scientific evidence.</p></div>
-                    <div class="glass-card animated-item"><i class="fas fa-lightbulb"></i><strong>Innovation</strong><p>Entertaining digital healthcare that thinks outside the box.</p></div>
+                <div class="approach-content">
+                    <p data-key="approach_intro">The philosophy of Delvine is embedded in its name.</p>
+                    <div class="approach-grid">
+                        <div class="approach-card">
+                            <h3 data-key="approach_delicate_title">Delicate</h3>
+                            <p data-key="approach_delicate_text">We uncover the complex causes of diseases with the <strong>delicate and sophisticated technology</strong> of AI.</p>
+                        </div>
+                        <div class="approach-card">
+                            <h3 data-key="approach_vine_title">Vine</h3>
+                            <p data-key="approach_vine_text">Like a grapevine, we help patients overcome illness and adapt to a healthy life with <strong>strong vitality</strong>.</p>
+                        </div>
+                    </div>
+                    <p class="approach-summary" data-key="approach_summary">Through the combination of these two values, we are forging a new path that transcends the limits of technology to realize human-centered values.</p>
                 </div>
             </div>
         </section>
 
-        <section id="platform" class="animated-section">
+        <section id="solutions" class="animated-section">
             <div class="container">
                  <div class="section-title">
-                     <h2>Our Approach</h2>
+                     <h2 data-key="solutions_title">Where Technology Becomes Reality: Delvine's Core Solutions</h2>
                  </div>
-                 <div class="feature-box animated-item">
-                    <img src="https://placehold.co/200x200/1E2D40/4A90E2?text=FREE-B" alt="FREE-B Illustration">
-                    <div>
-                        <h3>FREE-B <span class="subtitle">Functional Recovery Exercise Engine - Body</span></h3>
-                        <p>A digital solution designed to treat and manage physical inconveniences caused by neurological or musculoskeletal disorders, verified by renowned SCI papers.</p>
+                 <div class="solutions-pillar">
+                    <h3 data-key="solutions_pillar1_title">Pillar 1: Neuro-Rehabilitation - Maximizing the Brain's Recovery Potential</h3>
+                    <div class="solution-item">
+                        <h4 data-key="solutions_pillar1_item1_title">PLANTO</h4>
+                        <p data-key="solutions_pillar1_item1_text">An AI-based occupational therapy device that aids the recovery of stroke patients through gamified rehabilitation content and personalized feedback.</p>
+                    </div>
+                    <div class="solution-item">
+                        <h4 data-key="solutions_pillar1_item2_title">NeSAT</h4>
+                        <p data-key="solutions_pillar1_item2_text">A VR-based diagnostic technology for spatial-temporal cognitive impairment, setting a new standard for diagnosis by objectively and precisely evaluating symptoms like hemispatial neglect.</p>
+                    </div>
+                 </div>
+                 <div class="solutions-pillar">
+                    <h3 data-key="solutions_pillar2_title">Pillar 2: Senior Healthcare - Designing a Healthy Old Age with Proactive Management</h3>
+                    <div class="solution-item">
+                        <h4 data-key="solutions_pillar2_item1_title">AI Care Robot</h4>
+                        <p data-key="solutions_pillar2_item1_text">Monitors seniors' vital signs and early stroke symptoms 24/7 using non-contact sensors and AI analysis. It innovates safety and efficiency in nursing homes and daycare centers, painting a future where technology completes warm care. (A project from the Technology Innovation Development Program for SMEs)</p>
+                    </div>
+                 </div>
+                 <div class="solutions-pillar">
+                    <h3 data-key="solutions_pillar3_title">Pillar 3: Precision Medicine - Unlocking Personalized Cancer Treatment with Genomic Data</h3>
+                     <div class="solution-item">
+                        <h4 data-key="solutions_pillar3_item1_title">NGS Data AI Analysis</h4>
+                        <p data-key="solutions_pillar3_item1_text">In collaboration with Seoul St. Mary's Hospital, we are developing a proprietary AI model to analyze NGS genomic data from patients with hematologic and liver cancers. Backed by patents and SCI-level publications, our technology offers a path to optimized treatment for each individual patient.</p>
                     </div>
                 </div>
-                 <div class="feature-box animated-item">
-                    <img src="https://placehold.co/200x200/1E2D40/4A90E2?text=FREE-M" alt="FREE-M Illustration">
-                    <div>
-                        <h3>FREE-M <span class="subtitle">Functional Recovery Exercise Engine - Mind</span></h3>
-                        <p>A therapeutic program to treat and manage psychological symptoms caused by addiction or mood disorders by correcting distorted cognitive processes.</p>
+                <div class="solutions-pillar">
+                    <h3 data-key="solutions_pillar4_title">Pillar 4: Pharmaceutical Solutions - Accelerating the Pharmaceutical Industry with Data Automation</h3>
+                    <div class="solution-item">
+                        <h4 data-key="solutions_pillar4_item1_title">VeriPharm</h4>
+                        <p data-key="solutions_pillar4_item1_text">An AI-based automation solution, development completed and ready for market entry. It automatically recognizes and processes complex prescription performance documents and maximizes operational efficiency with an AI chatbot, leading the digital transformation of the pharmaceutical industry.</p>
                     </div>
                 </div>
             </div>
@@ -80,13 +117,13 @@
         <section id="contact" class="animated-section">
             <div class="container">
                 <div class="section-title">
-                    <h2>Get In Touch</h2>
+                    <h2 data-key="contact_title">We are looking for partners to build a healthier future with Delvine.</h2>
                 </div>
-                <h3>Seeking Investors & Partners</h3>
-                <p>Join Delvine's journey to redefine the future of medical technology.</p>
+                <p data-key="contact_subtitle">We await collaboration with all who resonate with Delvine's technology and vision. We welcome contact from those who wish to create innovation together.</p>
                  <div class="contact-info">
-                    <div class="info-item"><i class="fas fa-map-marker-alt"></i> <span>5F, 26, Hoam-ro 22 gil, Gwanak-gu, Seoul, Republic of Korea</span></div>
-                    <a href="mailto:info@delvine.co.kr" class="cta-button">Email Us</a>
+                    <div class="info-item"><i class="fas fa-map-marker-alt"></i> <span data-key="contact_address">5F, 26, Hoam-ro 22-gil, Gwanak-gu, Seoul, Republic of Korea (Sillim Venture Town 2)</span></div>
+                    <div class="info-item"><i class="fas fa-envelope"></i> <span>cho@delvine.co.kr</span></div>
+                    <a href="mailto:cho@delvine.co.kr" class="cta-button" data-key="contact_cta">Contact Us</a>
                 </div>
             </div>
         </section>
@@ -94,11 +131,8 @@
 
     <footer>
         <div class="container">
-            <p>(주)델바인 | 대표자: 조성민 | 사업자 번호: 787-81-00687</p>
-            <p>Copyright © 2023 Delvine Inc. All rights reserved.</p>
-            <div class="social-links">
-                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-            </div>
+            <p data-key="footer_info">(주)델바인 | 대표자: 조성민 | 사업자 번호: 787-81-00687</p>
+            <p data-key="footer_copyright">Copyright © 2023 Delvine Inc. All rights reserved.</p>
         </div>
     </footer>
 
