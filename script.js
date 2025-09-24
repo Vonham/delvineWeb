@@ -1,9 +1,27 @@
 document.addEventListener('DOMContentLoaded', function() {
     
     const header = document.querySelector('header');
+    const nav = document.querySelector('header nav');
     const navLinks = document.querySelectorAll('header nav a');
     const sections = document.querySelectorAll('main section');
     const langButtons = document.querySelectorAll('.lang-btn');
+    const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
+
+    // --- Mobile Menu Toggle ---
+    if (mobileMenuToggle) {
+        mobileMenuToggle.addEventListener('click', () => {
+            nav.classList.toggle('active');
+            // Optional: Change icon from bars to times (X)
+            const icon = mobileMenuToggle.querySelector('i');
+            if (nav.classList.contains('active')) {
+                icon.classList.remove('fa-bars');
+                icon.classList.add('fa-times');
+            } else {
+                icon.classList.remove('fa-times');
+                icon.classList.add('fa-bars');
+            }
+        });
+    }
 
     // --- Language Translation Data ---
     const translations = {
@@ -156,6 +174,13 @@ document.addEventListener('DOMContentLoaded', function() {
             const targetSection = document.querySelector(targetId);
             if (targetSection) {
                 targetSection.scrollIntoView({ behavior: 'smooth' });
+            }
+            // Close mobile menu on link click
+            if (nav.classList.contains('active')) {
+                nav.classList.remove('active');
+                const icon = mobileMenuToggle.querySelector('i');
+                icon.classList.remove('fa-times');
+                icon.classList.add('fa-bars');
             }
         });
     });
